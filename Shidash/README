@@ -1,0 +1,11 @@
+These are the config files and scripts needed to get my Tails install
+running.
+
+Note: I'm still working out some issues with development environment
+setup and I need to tweak some of the firewall setting changes.
+
+setup.sh: Initial setup on a fresh Tails install (with persistent volume)
+boot.sh: Configuration on boot
+utilities: Scripts for random utility functions
+backup: Backup-related scripts
+dotfiles: Config files
