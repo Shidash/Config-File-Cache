@@ -8,6 +8,7 @@ sudo sed -i "s/$outerface lo {/$outerface lo {\n\t\tdaddr 127.0.0.1 proto tcp sy
 sudo service ferm restart
 killall metacity nautilus gnome-shell gnome-panel
 pkill -9 gnome-panel
+setxkbmap -option compose:caps
 xscreensaver &
 trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 20 --transparent true --tint 0x000000 --height 18 &
 exec ck-launch-session xmonad
