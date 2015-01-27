@@ -6,8 +6,8 @@ sudo chown -R amnesia /live/persistence/TailsData_unlocked/dotfiles
 mkdir /home/amnesia/Persistent/mnt # Make dir for mount flash drive
 sudo /home/amnesia/Persistent/utilities/mount.sh # Transfer key files
 sudo cp -r /home/amnesia/Persistent/mnt/Keyfiles/* /live/persistence/TailsData_unlocked
-cp -r /home/amnesia/Persistent/mnt/Keyfiles/keepass.kdb /home/amnesia/Persistent/mnt/Keyfiles/go /home/amnesia/Persistent
-sudo rm -r /live/persistence/TailsData_unlocked/keepass.kdb /live/persistence/TailsData_unlocked/go
+cp -r /home/amnesia/Persistent/mnt/Keyfiles/keepass.kdb /home/amnesia/Persistent/mnt/Keyfiles/go /home/amnesia/Persistent/mnt/Keyfiles/.pond /home/amnesia/Persistent
+sudo rm -r /live/persistence/TailsData_unlocked/keepass.kdb /live/persistence/TailsData_unlocked/go /live/persistence/TailsData_unlocked/.pond
 sudo chown -R amnesia /live/persistence/TailsData_unlocked/gnupg /live/persistence/TailsData_unlocked/icedove /live/persistence/TailsData_unlocked/openssh-client /live/persistence/TailsData_unlocked/pidgin
 sudo /home/amnesia/Persistent/utilities/unmount.sh
 sudo apt-get update
