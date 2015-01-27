@@ -1,0 +1,34 @@
+Useful snippets:
+export http_proxy='';
+twistd -n web --port onion:80 --path
+
+TODO: Add browser config-
+Allow connections to localhost
+Install addons for translation, reading, and maybe full translation:
+  https://addons.mozilla.org/en-US/firefox/addon/automatik-text-reader/?src=search
+  https://addons.mozilla.org/en-US/firefox/addon/google-dictionary-and-google-t/?src=cb-dl-mostpopular
+
+TODO: Get proxies or VPNs working
+
+TODO: Backup scripts-
+Tahoe-LAFS
+To hard drive
+
+TODO: Contact management on search tool
+
+TODO: Videos, pictures, music, and books
+Scripts for transferring and managing things on camera
+Photo gallery
+Central repository for music, videos, and books
+Scripts for backing up all of these
+VPS for same
+
+TODO: Android backup
+Backup system
+Script for backing up and syncing with music/videos/books
+Sync some contacts with separate contact list
+Kindle book backup/syncing
+
+TODO: Server stuff
+Better data version control 
+Server backup system
