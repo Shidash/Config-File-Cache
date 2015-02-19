@@ -32,3 +32,11 @@ Kindle book backup/syncing
 TODO: Server stuff
 Better data version control 
 Server backup system
+
+TODO: Scraper server setup scripts
+Setup process
+Mount hard drive
+Check for empty json files
+Download/pull all git repos
+Sync files with server
+Import into search tool
