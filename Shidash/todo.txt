@@ -34,9 +34,10 @@ Better data version control
 Server backup system
 
 TODO: Scraper server setup scripts
-Setup process
-Mount hard drive
-Check for empty json files
-Download/pull all git repos
-Sync files with server
-Import into search tool
+Setup scripts (install, transfer config)
+Sync files with server (both ways- compress and encrypt dirs)
+Data version control
+Clone/pull all git repos (initially and update)
+Import into search tool (point at dir)
+Scripts to pre-process data for search
+GUI for starting search (with import), syncing data, scraping
