@@ -112,3 +112,12 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/amnesia/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:$HOME/Persistent/.rvm/bin" # Add RVM to PATH for scripting
+export GOPATH=$HOME/Persistent/software/go/
+alias pond='$GOPATH/bin/client'
+alias pond-build='sudo bash -c "sudo apt-get update && \
+apt-get install -y -t testing golang && \
+apt-get install -y gcc git mercurial libgtk-3-dev libgtkspell-3-dev libtspi-dev trousers" && \
+go get -u -tags ubuntu github.com/agl/pond/client && \
+echo "Success." || echo "Sorry, something went wrong."'
+alias pond-cli='$GOPATH/bin/client --cli'
+alias pond-install-deps='sudo apt-get install libtspi1 libgtkspell-3-0'
