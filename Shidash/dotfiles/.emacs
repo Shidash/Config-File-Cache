@@ -18,6 +18,13 @@
 (add-hook 'message-mode-hook 'turn-on-auto-fill)
 (setq-default fill-column 78)
 
+(add-hook 'go-mode-hook
+   (lambda ()
+     (setq-default)
+     (setq tab-width 2)
+     (setq standard-indent 2)
+     (setq indent-tabs-mode nil)))
+
 (global-set-key (kbd "<f8>") 'flyspell-mode)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
