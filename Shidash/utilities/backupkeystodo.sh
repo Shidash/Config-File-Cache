@@ -4,3 +4,5 @@ sudo cp -r /live/persistence/TailsData_unlocked/gnupg /live/persistence/TailsDat
 cp -r /home/amnesia/Persistent/keepass.kdb /home/amnesia/Persistent/software/go /home/amnesia/Persistent/.pond /home/amnesia/Persistent/mnt/Keyfiles  
 rm -r /home/amensia/Persistent/mnt/todo
 cp -r /home/amnesia/Persistent/todo /home/amnesia/Persistent/mnt/
+rm -r /home/amnesia/Persistent/mnt/Learn
+cp -r /home/amnesia/Persistent/Learn /home/amnesia/Persistent/mnt/
