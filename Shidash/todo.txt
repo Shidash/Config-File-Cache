@@ -4,6 +4,12 @@ twistd -n web --port onion:80 --path
 gpg-agent --daemon --use-standard-socket
 ssh -L 9200:127.0.0.1:9200 transparencytoolkit.org
 
+Tahoe:
+torsocks tahoe start
+tahoe create-alias name
+tahoe webopen name:
+tahoe backup dir_to_backup/ name:
+
 TODO: Add browser config-
 Allow connections to localhost
 Install addons for translation, reading, and maybe full translation:
