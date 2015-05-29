@@ -24,9 +24,8 @@ cd /home/amnesia/Persistent
 mkdir software # Make software dir
 cd software
 cp -r /home/amnesia/Persistent/mnt/Keyfiles/go /home/amnesia/Persistent/software
-curl -L -O https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.4.zip
-mv elasticsearch-1.3.4.zip /home/amnesia/Persistent
-unzip /home/amnesia/Persistent/elasticsearch-1.3.4.zip
-rm /home/amnesia/Persistent/elasticsearch-1.3.4.zip
+wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.2.zip
+unzip /home/amnesia/Persistent/software/elasticsearch-1.5.2.zip
+rm /home/amnesia/Persistent/software/elasticsearch-1.5.2.zip
 /home/amnesia/Persistent/boot.sh # Run boot config script
 rm /home/amnesia/.icedove
