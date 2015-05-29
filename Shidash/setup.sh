@@ -9,6 +9,7 @@ sudo cp -r /home/amnesia/Persistent/mnt/Keyfiles/* /live/persistence/TailsData_u
 cp -r /home/amnesia/Persistent/mnt/Keyfiles/keepass.kdb /home/amnesia/Persistent/mnt/Keyfiles/.pond /home/amnesia/Persistent/
 sudo rm -r /live/persistence/TailsData_unlocked/keepass.kdb /live/persistence/TailsData_unlocked/go /live/persistence/TailsData_unlocked/.pond
 sudo chown -R amnesia /live/persistence/TailsData_unlocked/gnupg /live/persistence/TailsData_unlocked/icedove /live/persistence/TailsData_unlocked/openssh-client /live/persistence/TailsData_unlocked/pidgin /live/persistence/TailsData_unlocked/tahoe
+cp -r /home/amnesia/Persistent/mnt/todo /home/amnesia/Persistent/todo # Move todo list
 sudo /home/amnesia/Persistent/utilities/unmount.sh
 sudo apt-get update
 sudo apt-get install make libssl-dev # Dev env setup
