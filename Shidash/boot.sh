@@ -1,10 +1,13 @@
 #!/bin/bash 
 
 source /home/amnesia/Persistent/.rvm/scripts/rvm
+rvm use 2.1.3
 gsettings set org.gnome.desktop.background primary-color '#000000'
 gsettings set org.gnome.desktop.background picture-uri ''
 sudo apt-get install icedove iceowl-extension ghc6 xmonad xmobar dmenu trayer xfce4-terminal libghc-xmonad-contrib-dev xscreensaver emacs23-nox make libssl-dev tahoe-lafs nodejs build-essential golang-mode golang
 sudo apt-get -t wheezy-backports install git-annex
+sudo bash -c "echo 'RejectPlaintextPorts 80, 800, 8080' >> /etc/tor/torrc"
+sudo service tor reload
 sudo sed -i "s/$outerface lo {/$outerface lo {\n\t\tdaddr 127.0.0.1 proto tcp syn dport 3000 {\n\t\t\tmod owner uid-owner amnesia ACCEPT;\n\t\t}\n\t\tdaddr 127.0.0.1 proto tcp syn dport 8000 {\n\t\t\tmod owner uid-owner amnesia ACCEPT;\n\t\t}\n\t\tdaddr 127.0.0.1 proto tcp syn dport 9200 {\n\t\t\tmod owner uid-owner amnesia ACCEPT;\n\t\t}\n\t\tdaddr 127.0.0.1 proto tcp syn dport 9300 {\n\t\t\tmod owner uid-owner amnesia ACCEPT;\n\t\t}\n\t\tdaddr 127.0.0.1 proto tcp syn dport 9001 {\n\t\t\tmod owner uid-owner amnesia ACCEPT;\n\t\t}\n/" /etc/ferm/ferm.conf
 sudo service ferm restart
 killall metacity nautilus gnome-shell gnome-panel
