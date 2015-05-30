@@ -14,13 +14,13 @@ sudo /home/amnesia/Persistent/utilities/unmount.sh
 sudo apt-get update
 sudo apt-get install make libssl-dev # Dev env setup
 echo 'rvm_path="$HOME/Persistent/.rvm"' >> ~/.rvmrc
-\curl -sSL get.rvm.io | bash -s stable
+torsocks \curl -sSL get.rvm.io | torsocks bash -s stable
 source /home/amnesia/Persistent/.rvm/scripts/rvm
 rvm autolibs disable
-rvm install 2.1.3
+torsocks rvm install 2.1.3
 rvm use 2.1.3
-gem install tzinfo
-gem install rails -v 4.1.7
+torsocks gem install tzinfo
+torsocks gem install rails -v 4.1.7
 cd /home/amnesia/Persistent 
 mkdir software # Make software dir
 cd software
