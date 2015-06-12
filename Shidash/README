@@ -9,3 +9,9 @@ boot.sh: Configuration on boot
 utilities: Scripts for random utility functions
 backup: Backup-related scripts
 dotfiles: Config files
+tahoeinstall.sh: Loads tahoe and then setup based on tahoe data
+
+backupkeystodo.sh: Backs up frequently used files (must mount first)
+backupall.sh: Backs up all files from flash drive (must mount first)
+restoresetup.sh: Restores files needed for setup (must install tahoe first)
+restoreall.sh: Makes a new flash drive with all files (must mount first)
