@@ -17,10 +17,6 @@ tahoe cp --recursive Learn: Learn
 cp -r Learn/Latest/* Learn
 rm -r Learn/Archives Learn/Latest
 
-tahoe cp --recursive TailsData_unlocked: TailsData_unlocked
-cp -r TailsData_unlocked/Latest/* TailsData_unlocked
-rm -r TailsData_unlocked/Archives TailsData_unlocked/Latest
-
 tahoe cp --recursive 2015: 2015
 cp -r 2015/Latest/* 2015
 rm -r 2015/Archives 2015/Latest

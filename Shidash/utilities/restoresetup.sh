@@ -18,7 +18,3 @@ rm -r todo/Archives todo/Latest
 tahoe cp --recursive Learn: Learn
 cp -r Learn/Latest/* Learn
 rm -r Learn/Archives Learn/Latest
-
-tahoe cp --recursive TailsData_unlocked: TailsData_unlocked
-cp -r TailsData_unlocked/Latest/* TailsData_unlocked
-rm -r TailsData_unlocked/Archives TailsData_unlocked/Latest
