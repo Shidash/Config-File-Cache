@@ -1,0 +1,25 @@
+How to start on server-
+1. su - vnc
+2. sudo x11vnc -display :0 -localhost -forever -rfbauth .vnc/passwd
+
+How to run on client-
+1. torify ssh vnc@blahblah.onion -L 5900:localhost:5900
+2. vncviewer -encodings "copyrect tight zrle hextile" localhost:5900
+
+
+
+Initial setup on server-
+0. Install: x11vnc openssh-server tor
+1. Add ssh keys to ~/.ssh/authorized_keys
+2. Change PasswordAuthentication to no in /etc/ssh/sshd_config (to only allow
+with keys)
+3. Create a vnc password: x11vnc -storepasswd
+4. Edit /etc/tor/torrc and add-
+   	HiddenServiceDir /var/lib/tor/ssh/
+	HiddenServicePort 22 127.0.0.1:22
+5. sudo service tor restart
+6. Get hidden service address from /var/lib/tor/ssh
+7. In .xmonad/xmonad.hs change mod4Mask to mod1Mask
+
+Initial setup on client-
+0. Install: vncviewer tor
